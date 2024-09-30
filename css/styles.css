@@ -123,82 +123,132 @@ a:hover {
     color: var(--primary-brand);
 }
 
-/* Хедер */
-header {
-    justify-content: space-between;
-    max-width: 1440px;
-    margin: 0 auto;
-    background-color: #fff;
-}
-
 /* Логотип */
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 24px;
-    color: #222F42;
+.logo-link {
+    font-family: 'Raleway', sans-serif;
+    /* Шрифт для логотипу */
+    font-weight: 700;
+    /* Жирність */
+    font-size: 18px;
+    /* Розмір шрифту */
+    line-height: 1.17;
+    /* Міжрядковий інтервал */
+    letter-spacing: 0.03em;
+    /* Міжлітерний інтервал */
     text-transform: uppercase;
+    /* Великі літери */
+    color: #4d5ae5;
+    /* Колір тексту */
 }
 
-.logo span {
-    color: #4D5AE5;
+.logo-span {
+    color: #2e2f42;
+    /* Колір тексту для Studio */
 }
 
-/* Меню навігації */
+/* Навігація */
 .menu {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.menu a {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+.menu-link {
     font-weight: 500;
-    line-height: 24px;
-    text-decoration: none;
-    color: #222F42;
-}
-
-.menu a:hover {
-    color: #4D5AE5;
-}
-
-.contact-info a {
-    font-family: 'Roboto', sans-serif;
+    /* Жирність */
     font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    color: #222F42;
+    /* Розмір шрифту */
+    line-height: 1.5;
+    /* Міжрядковий інтервал */
+    letter-spacing: 0.02em;
+    /* Міжлітерний інтервал */
+    color: #2e2f42;
+    /* Колір тексту */
     text-decoration: none;
 }
 
-.contact-info a:hover {
-    color: #4D5AE5;
+.menu-link:hover,
+.menu-link:focus {
+    color: #404bbf;
+    /* Колір при ховері та фокусі */
+}
+
+/* Контактна інформація */
+.contact-address {
+    font-style: normal;
+    /* Прибирання курсиву */
+}
+
+.contact-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-link {
+    font-size: 16px;
+    /* Розмір шрифту */
+    line-height: 1.5;
+    /* Міжрядковий інтервал */
+    letter-spacing: 0.02em;
+    /* Міжлітерний інтервал */
+    color: #434455;
+    /* Колір шрифту */
+    text-decoration: none;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: #404bbf;
+    /* Колір при ховері та фокусі */
 }
 
 /* Hero Section */
-.hero {
-    background-color: #2a2a47;
-    color: #fff;
+.hero-section {
+    background-color: var(--hero-background);
+    /* Фон секції */
     text-align: center;
+    padding: 50px 0;
 }
 
-.hero h1 {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 20px;
+.hero-title {
+    font-size: var(--font-size-h1);
+    /* Розмір заголовка */
+    line-height: var(--line-height-h1);
+    /* Міжрядковий інтервал */
+    letter-spacing: var(--letter-spacing-base);
+    /* Міжлітерний інтервал */
+    color: #ffffff;
+    /* Колір тексту */
+    text-align: center;
+    /* Вирівнювання заголовка */
 }
 
-.hero .btn {
-    background-color: #4b84f1;
-    color: #fff;
-    font-size: 18px;
+.hero-btn {
+    background-color: var(--primary-brand);
+    /* Фон кнопки */
+    font-family: var(--font-family);
+    /* Шрифт для кнопки */
+    font-weight: var(--font-weight-medium);
+    /* Жирність */
+    font-size: var(--font-size-medium);
+    /* Розмір шрифту */
+    line-height: 1.5;
+    /* Міжрядковий інтервал */
+    letter-spacing: 0.04em;
+    /* Міжлітерний інтервал */
+    color: #ffffff;
+    /* Колір тексту */
+    padding: 10px 20px;
+    border: none;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
-.hero .btn:hover {
-    background-color: #3a72e0;
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--pressed-state);
+    /* Фон при ховері/фокусі */
 }
 
 /* Services Section */
