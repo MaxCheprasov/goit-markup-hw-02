@@ -141,7 +141,7 @@ a:hover {
     /* Колір тексту */
 }
 
-.logo-span {
+header .logo-span {
     color: #2e2f42;
     /* Колір тексту для Studio */
 }
@@ -413,8 +413,8 @@ a:hover {
     /* Колір тексту */
 }
 
-.logo-span {
-    color: #2e2f42;
+.footer-container .logo-span {
+    color: #f4f4fd;
     /* Колір тексту для Studio */
 }
 
