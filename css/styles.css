@@ -1,0 +1,367 @@
+/* Глобальні налаштування для типографіки та кольорів */
+:root {
+    --primary-brand: #4D5AE5;
+    /* Iris */
+    --pressed-state: #404BBF;
+    /* Ocean */
+    --dark: #222F42;
+    /* Dark */
+    --success: #31D0AA;
+    /* Green */
+    --text-color: #434345;
+    /* Slate */
+    --subtle-text: #8E8F99;
+    /* Light Slate */
+    --accent: #E7E9FC;
+    /* Cornflower */
+    --light-background: #F4F4FD;
+    /* Cloud */
+    --modal-overlay: #222F42;
+    /* Navy Blue Modal */
+    --hero-background: #E2E4E7;
+    /* Grey */
+    --white-background: #FFFFFF;
+    /* White */
+    --modal-background: #FCFCFC;
+    /* Dairy */
+
+    /* Шрифти */
+    --font-family: 'Roboto', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    /* Шрифтові розміри */
+    --font-size-base: 16px;
+    --font-size-h1: 56px;
+    --font-size-h2: 36px;
+    --font-size-h3: 20px;
+    --font-size-small: 12px;
+    --font-size-medium: 16px;
+
+    /* Лінійна висота */
+    --line-height-base: 24px;
+    --line-height-h1: 60px;
+    --letter-spacing-base: 0.02em;
+    --letter-spacing-small: 0.04em;
+}
+
+/* Тіло документа */
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-base);
+    color: var(--text-color);
+    background-color: var(--white-background);
+}
+
+/* Заголовки */
+h1,
+h2,
+h3 {
+    color: var(--dark);
+    font-family: var(--font-family);
+}
+
+h1 {
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-h1);
+    letter-spacing: var(--letter-spacing-base);
+}
+
+h2 {
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing-base);
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+    font-weight: var(--font-weight-medium);
+    letter-spacing: var(--letter-spacing-base);
+}
+
+/* Текст */
+p,
+a {
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-base);
+    letter-spacing: var(--letter-spacing-base);
+}
+
+/* Малий текст */
+.small-text {
+    font-size: var(--font-size-small);
+    line-height: 14px;
+    letter-spacing: var(--letter-spacing-small);
+}
+
+/* Середній текст */
+.medium-text {
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-base);
+    letter-spacing: var(--letter-spacing-base);
+}
+
+/* Кнопки */
+button,
+.button-text {
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-base);
+    letter-spacing: var(--letter-spacing-small);
+    text-transform: uppercase;
+    background-color: var(--primary-brand);
+    color: var(--white-background);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--pressed-state);
+}
+
+/* Посилання */
+a {
+    text-decoration: underline;
+}
+
+a:hover {
+    color: var(--primary-brand);
+}
+
+/* Хедер */
+header {
+    display: flex;
+    justify-content: space-between;
+    /* Вирівнювання контенту по краям */
+    align-items: center;
+    /* Вирівнювання по вертикалі */
+    width: 100%;
+    /* Хедер на всю ширину екрану */
+    max-width: 1440px;
+    /* Максимальна ширина */
+    height: 72px;
+    /* Висота хедера */
+    padding: 0 156px;
+    /* Відступи зліва і справа */
+    box-sizing: border-box;
+    background-color: #fff;
+    /* Білий фон */
+    margin: 0 auto;
+    /* Центрування */
+}
+
+/* Логотип */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 24px;
+    color: #222F42;
+    /* Колір тексту */
+    text-transform: uppercase;
+}
+
+.logo span {
+    color: #4D5AE5;
+    /* Колір для синього тексту WEB */
+}
+
+/* Меню навігації */
+.menu {
+    display: flex;
+    gap: 40px;
+    /* Відстань між пунктами меню */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-decoration: none;
+    color: #222F42;
+    /* Темний колір для меню */
+}
+
+.menu a:hover {
+    color: #4D5AE5;
+    /* Колір на ховері */
+}
+
+/* Контактна інформація */
+.contact-info {
+    display: flex;
+    gap: 40px;
+}
+
+.contact-info a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #222F42;
+    /* Темний колір */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: #4D5AE5;
+    /* Колір на ховері */
+}
+
+
+/* Hero Section */
+.hero {
+    background-color: #2a2a47;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #4b84f1;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #3a72e0;
+}
+
+
+/* Services Section */
+.services {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.services-list li {
+    width: 23%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.services-list li:hover {
+    transform: translateY(-5px);
+}
+
+.services-list h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.services-list p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Our Team Section */
+.team {
+    background-color: #e9f0f8;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.team h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.team-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.team-list li {
+    width: 23%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-list li:hover {
+    transform: translateY(-5px);
+}
+
+.team-list img {
+    width: 100%;
+    height: auto;
+}
+
+.team-list h3 {
+    font-size: 20px;
+    margin: 20px 0 10px;
+    font-weight: 700;
+}
+
+.team-list p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+/* Portfolio Section */
+.portfolio {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.portfolio-item {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.portfolio-item img {
+    width: 100%;
+}
+
+.portfolio-item h3 {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.portfolio-item p {
+    font-size: 16px;
+    color: #777;
+}
