@@ -205,18 +205,18 @@ a:hover {
 
 /* Hero Section */
 .hero-section {
-    background-color: var(--hero-background);
+    background-color: #2e2f42;
     /* Фон секції */
     text-align: center;
     padding: 50px 0;
 }
 
 .hero-title {
-    font-size: var(--font-size-h1);
+    font-size: 56px;
     /* Розмір заголовка */
-    line-height: var(--line-height-h1);
+    line-height: 1.07;
     /* Міжрядковий інтервал */
-    letter-spacing: var(--letter-spacing-base);
+    letter-spacing: 0.02em;
     /* Міжлітерний інтервал */
     color: #ffffff;
     /* Колір тексту */
