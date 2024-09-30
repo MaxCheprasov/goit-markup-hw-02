@@ -268,9 +268,13 @@ a:hover {
     font-weight: 700;
 }
 
+.services-list .h-service {
+    color: #2e2f42;
+}
+
 .services-list p {
     font-size: 16px;
-    color: #666;
+    color: #434455;
 }
 /* Team Section */
 .team-section {
@@ -410,7 +414,7 @@ a:hover {
 }
 
 .logo-span {
-    color: #f4f4fd;
+    color: #2e2f42;
     /* Колір тексту для Studio */
 }
 
